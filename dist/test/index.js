@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const areaCalculator_1 = require("../src/math/areaCalculator");
+const diameterCalculator_1 = require("../src/math/diameterCalculator");
+const radiusCalculator_1 = require("../src/math/radiusCalculator");
+const circumferenceCalculator_1 = require("../src/math/circumferenceCalculator");
+console.log((0, areaCalculator_1.areaCalculator)({ radius: 2.78 }));
+console.log((0, diameterCalculator_1.diameterCalculator)({ circumference: 17.46 }));
+console.log((0, radiusCalculator_1.radiusCalculator)({ diameter: 5.56 }));
+console.log((0, circumferenceCalculator_1.circumferenceCalculator)({ radius: 2.78 }));
