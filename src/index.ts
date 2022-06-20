@@ -77,8 +77,9 @@ export {
 
 export {
 	cylinderVolume,
-	cylinderHeight
-} from './math/cylinderVolume'
+	cylinderHeight,
+	cylinderRadius
+} from './math/cylinderVHR'
 
 const unhandledRejections = new Map();
 process.on("uncaughtException", (err, expected) => {

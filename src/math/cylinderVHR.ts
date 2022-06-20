@@ -19,8 +19,15 @@ export function cylinderVolume({ diameter, height, radius }: parameters) {
 export function cylinderHeight({ diameter, radius, volume }: parameters) {
 	if(!volume && radius || !volume && diameter) throw new Error("Provide a volume & radius or a volume & diameter")
 	if(volume && radius) {
-		return volume/(3.14)*(Math.pow(radius, 2))
+		return volume/(3.14 * Math.pow(radius, 2))
 	} else if(volume && diameter) {
-		return volume/3.14*Math.pow(diameter/2, 2)
+		return volume/(3.14 * Math.pow(diameter/2, 2))
+	}
+}
+
+export function cylinderRadius({ volume, height }: parameters) {
+	if(!volume && !height) throw new Error("Provide a volume & a height")
+	if(volume && height) {
+		return Math.sqrt(volume / (3.14 * height))
 	}
 }
