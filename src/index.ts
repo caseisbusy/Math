@@ -75,6 +75,11 @@ export {
 	supplementary
 } from './math/supplementary'
 
+export {
+	cylinderVolume,
+	cylinderHeight
+} from './math/cylinderVolume'
+
 const unhandledRejections = new Map();
 process.on("uncaughtException", (err, expected) => {
 	console.log(`Error: ${err} \n Expected: ${expected}`)
